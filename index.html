@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествия мечты</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">TravelDream</div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Главная</a>
+                <a href="#map-section" class="nav-link">Направления</a>
+                <a href="#testimonials" class="nav-link">Отзывы</a>
+                <a href="#contacts" class="nav-link">Контакты</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главный баннер -->
+    <section class="hero" id="home">
+        <div class="hero-content animate-fade-in">
+            <h1 class="hero-title">Откройте мир вместе с нами</h1>
+            <p class="hero-subtitle">Незабываемые путешествия начинаются здесь</p>
+            <button class="btn btn-primary">Исследовать направления</button>
+        </div>
+    </section>
+
+    <!-- Изменяем секцию map-section -->
+    <section id="map-section" class="map-section">
+        <h2 class="section-title">Карта</h2>
+        <!-- Добавляем поиск перед картой -->
+        <div class="search-container">
+            <form class="search-box">
+                <input type="text" placeholder="Куда хотите поехать?" class="search-input" required>
+                <input type="date" class="date-input" required>
+                <select class="travelers-input" required>
+                    <option value="1">1 путешественник</option>
+                    <option value="2">2 путешественника</option>
+                    <option value="3">3 путешественника</option>
+                    <option value="4">4 путешественника</option>
+                </select>
+                <button type="submit" class="btn btn-search">Найти</button>
+            </form>
+        </div>
+        <div class="map-container">
+            <div id="map" class="map"></div>
+            <div class="office-list">
+                <div class="office-item" data-coordinates="[55.753215, 37.622504]">
+                    <h3>Москва</h3>
+                    <p>ул. Тверская, 1</p>
+                    <p>Тел: +7 (495) 123-45-67</p>
+                </div>
+                <div class="office-item" data-coordinates="[59.939095, 30.315868]">
+                    <h3>Санкт-Петербург</h3>
+                    <p>Невский проспект, 1</p>
+                    <p>Тел: +7 (812) 123-45-67</p>
+                </div>
+                <div class="office-item" data-coordinates="[56.838011, 60.597465]">
+                    <h3>Екатеринбург</h3>
+                    <p>ул. Ленина, 1</p>
+                    <p>Тел: +7 (343) 123-45-67</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="section-title">Отзывы путешественников</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Лучшее путешествие в моей жизни! Организация на высшем уровне."</p>
+                    <p class="testimonial-author">- Анна С.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Профессиональный подход и внимание к деталям. Рекомендую!"</p>
+                    <p class="testimonial-author">- Михаил Д.</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Незабываемые впечатления и отличный сервис."</p>
+                    <p class="testimonial-author">- Елена П.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌟</div>
+                    <h3>Лучшие цены</h3>
+                    <p>Гарантия самых выгодных предложений</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Создаем путешествие под ваши желания</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Надежность</h3>
+                    <p>10 лет успешной работы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Подпишитесь на новости и спецпредложения</h2>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Ваш email" class="email-input">
+                <button class="btn btn-primary">Подписаться</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="contacts" class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3 class="footer-title">О нас</h3>
+                <p>Мы помогаем путешественникам открывать новые горизонты и создавать незабываемые воспоминания.</p>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Контакты</h3>
+                <ul class="footer-links">
+                    <li><a href="tel:+79001234567" class="footer-link">+7 (900) 123-45-67</a></li>
+                    <li><a href="mailto:info@traveldream.ru" class="footer-link">info@traveldream.ru</a></li>
+                    <li class="footer-link">Москва, ул. Примерная, 1</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Социальные сети</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Instagram</a></li>
+                    <li><a href="#" class="footer-link">Facebook</a></li>
+                    <li><a href="#" class="footer-link">VKontakte</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
